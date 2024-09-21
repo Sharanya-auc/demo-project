@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       :root{
+        --myfontcolor: red;
+        --fontsize: 20px;
+        --fontpadding: 20px;
+        --myfavcolor: #b130bf;
+        --border: 2px solid black;
+       }
+       /*  */
+       .container{
+        background-color: rgb(151, 151, 210);
+       }
+       .box{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(6, 34, 71);
+        animation-name: sharanya;
+        animation-iteration-count:1 ;
+        animation-duration: 10s;
+        animation-fill-mode: forwards ;
+       }
+       @keyframes sharanya{
+        from{
+            width: 50px;
+        }
+        to{
+            width: 100%;
+        }
+    }
+       img{
+        width: 200px;
+        height: 200px;
+        /* background-color: rgb(233, 115, 115); */
+        border-radius: 5px;
+        /* animation-name: sweety;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-fill-mode: ; */
+        transition: 2s ease;
+       }
+       img:hover{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        /* background-color: aqua; */
+        
+       }
+      
+    @keyframes sweety{
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            top: 150px;
+            left: 0;
+        }
+        50%{
+            top: 150%;
+            left: 150%;
+        }
+        100%{
+            top: 0;
+            left: 150px;
+        }
+    }
+
+      </style>
+</head>
+<body>
+       <div class="container"></div>
+        <div class="box">
+
+        </div>
+        
+    </div>
+    <div class="box2">
+        <img src="https://th.bing.com/th/id/OIP.vpUUrAb6H7eMCIM4TRzpcAHaFj?rs=1&pid=ImgDetMain" alt="">
+    </div>
+</body>
+</html>

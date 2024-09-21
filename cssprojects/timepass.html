@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 219, 219); 
+} */
+        .Contain-Cart {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(22, 219, 219);
+
+        }
+
+        .CartContainer {
+            width: 50%;
+            height: 90%;
+            background-color: #fbfbfb;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px #1687d933;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .serving-container {
+            width: 30%;
+            height: 90%;
+            background-color: #fbfbfb;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px #1687d933;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Header {
+            margin: auto;
+            width: 90%;
+            height: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ingredient-list.Header {
+            justify-content: center;
+        }
+
+        .Heading {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            color: #2F3841;
+        }
+
+        .Action {
+            font-size: 14px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            color: #E44C4C;
+            cursor: pointer;
+            border-bottom: 1px solid #E44C4C;
+        }
+
+        .Recipe-Item {
+            margin: auto;
+            width: 90%;
+            height: 30%;
+            /* display: flex; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+        }
+
+        /* .image-box{
+	width: 15%;
+	text-align: center;
+} */
+
+        .image-box {
+            /* width: 15%; */
+            display: flex;
+            flex: 1;
+            text-align: center;
+            width: 100%;
+            padding: 10%;
+        }
+
+        .about {
+            height: 100%;
+            width: 24%;
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            padding-top: 10px;
+            line-height: 10px;
+            font-size: 32px;
+            font-family: 'Open Sans';
+            font-weight: 800;
+            color: #202020;
+        }
+
+        .subtitle {
+            line-height: 10px;
+            font-size: 18px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            color: #909090;
+        }
+
+        /* .counter{
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} */
+
+        /* .counter {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+} */
+        .btn {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .count {
+            font-size: 20px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            color: #202020;
+            Margin: auto;
+            Display: block;
+            text-align: center;
+        }
+
+        .prices {
+            height: 100%;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .amount {
+            padding-top: 20px;
+            font-size: 26px;
+            font-family: 'Open Sans';
+            font-weight: 800;
+            color: #202020;
+        }
+
+        .save {
+            padding-top: 5px;
+            font-size: 14px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            color: #1687d9;
+            cursor: pointer;
+        }
+
+        .remove {
+            padding-top: 5px;
+            font-size: 14px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            color: #E44C4C;
+            cursor: pointer;
+        }
+
+        /* .recipe-gen {
+    background-color: #f4f1f187;
+    border-radius: 25px;
+	cursor: pointer;
+	margin-bottom: 2%;
+} */
+
+        .recipe-gen {
+            background-color: #f4f1f187;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        .recipe-gen:hover {
+            background-color: #f4f1f1e8;
+        }
+
+        /* .recipe-2{
+	margin-top: 15px;
+} */
+
+        hr {
+            width: 66%;
+            float: right;
+            margin-right: 5%;
+        }
+
+        .checkout {
+            float: right;
+            margin-right: 5%;
+            width: 28%;
+        }
+
+        .total {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Subtotal {
+            font-size: 22px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            color: #202020;
+        }
+
+        .items {
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-weight: 500;
+            color: #909090;
+            line-height: 10px;
+        }
+
+        .total-amount {
+            font-size: 36px;
+            font-family: 'Open Sans';
+            font-weight: 900;
+            color: #202020;
+        }
+
+        .button {
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            color: #202020;
+        }
+
+        /* .minus {
+    width: 16px;
+}
+.plus {
+	width: auto;
+} */
+
+        /* about flex flex-col justify-center items-center */
+
+        .recipe-insgredient-container {
+            width: 300px;
+            height: 80px;
+            margin: 10px;
+            padding: 0 10px;
+            padding-top: 5px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border: 2px solid #878383a5;
+            white-space: wrap;
+            margin: 15% 5%;
+            border-radius: 5px;
+        }
+
+        .recipe-insgredient-container article {
+            height: 30px;
+            width: 100%;
+            padding-left: 3%;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            /* width: calc(100%/2); */
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        .serving-ingredients {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="recipe-gen grid grid-cols-4 grid-rows-1">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFzdGF8ZW58MHx8MHx8&w=1000&q=80"
+                style={{ height="120px" }} />
+        </div>
+        <div class="about flex flex-col justify-center items-center">
+            <div class="recipe-name-container">
+                <h1 class="title"> Pizza </h1>
+            </div>
+            <div class="recipe-insgredient-container ">
+                <article>All-purpose flour</article>
+                <article>Eggs</article>
+                <article>Olive oil</article>
+                <article>Salt</article>
+                <article>Black Pepper</article>
+                <article>Tomatoes</article>
+            </div>
+        </div>
+        <div class="counter grid grid-cols-3 grid-rows-1">
+            <div class="plus btn">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                    </svg>
+                    <span class="sr-only">Icon description</span>
+                </button>
+            </div>
+            <div class="count">2</div>
+            <div class="minus btn">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                    </svg>
+                    <span class="sr-only">Icon description</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="prices">
+            <div class="amount">$2.99</div>
+            <div class="save"><u>Save for later</u></div>
+            <div class="remove"><u>Remove</u></div>
+        </div>
+    </div>
+</body>
+
+</html>

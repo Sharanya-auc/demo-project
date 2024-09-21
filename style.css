@@ -1,0 +1,11 @@
+.box{
+    text-align: center;
+    width: max-content;
+    border-collapse: collapse;
+}
+form{
+    border: 2px solid black;
+}
+input{
+    padding: 10px;
+}

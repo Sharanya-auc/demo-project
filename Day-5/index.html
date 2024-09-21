@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box{
+            border: 2px;
+            padding: 10px;
+            margin: 10px;
+            gap: 10px;
+        }
+        .box-A{
+            border: 2px;
+            padding: 10px;
+            margin: 10px;
+            gap: 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 'header header header header'
+             'your-profile  main-section  main-section  main-section '
+                                  ' footer footer footer footer';
+        }
+        #box-1{
+            grid-area: header;
+        }
+        #box-2{
+            grid-area: your-profile;
+        }
+        #box-3{
+            grid-area: main-section;
+        }
+        #box-4{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box" id="box-1">
+                <div class="sub-container">
+                    <div style="color: white;">
+                       <h1>LOGOBAKERY</h1>
+                    </div>
+                   
+                       <div class="bb">
+                          <ul class="list">
+                           <li>SERVICES</li>
+                           <li>PROJECT</li>
+                           <li>ABOUT</li>
+                          </ul>
+                       </div>
+               
+                       <button class="btn">CONTACT</button>
+                  </div>
+               
+            </div> <br>
+            <div class="box-A" id="box-3">
+                    <img src="https://th.bing.com/th/id/OIP.c2uGgP6VZB4g4fOfC1fKdwHaEK?w=291&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <img src="https://th.bing.com/th/id/R.aed680899cba8f810333da4068c56628?rik=Hq2sI6PzZdJqHg&riu=http%3a%2f%2fwww.smallarc.com%2fwp-content%2fuploads%2f2015%2f08%2fgraphic-designer.jpg&ehk=lYoBr2Sg8f6He8Sohxgcr2KIPZIZpLebTySaUkVPCZE%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    <img src="https://d3ui957tjb5bqd.cloudfront.net/uploads/2020/06/11092310/Graphic-Design-Portfolio-Tips-8.jpg" alt="">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/331477312/00_preview.__large_preview.png?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=5424&max-w=400&s=99f73ecabd135170ad8d03b7374eace6" alt="">
+                    <img src="https://cdn.dribbble.com/users/879235/screenshots/3664779/ueno_branding.jpg?compress=1&resize=400x300&vertical=top" alt="">
+                    <img src="https://mizu.qodeinteractive.com/wp-content/uploads/2017/10/landing-home-img-5.jpg" alt="">
+            </div>
+            <div class="box" id="box-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet quas suscipit, dolorem recusandae similique blanditiis quam qui architecto excepturi totam eos. Nostrum voluptatum iste nemo temporibus nihil libero maiores, officiis fuga! Fugiat, molestias aperiam nemo labore modi et consequatur dolore accusantium exercitationem quos qui quam adipisci ad tempore velit soluta quisquam, alias, error fugit? Odit, illo magnam ipsam maxime neque qui molestias facilis ex unde iste eligendi ratione atque reprehenderit provident, explicabo eaque eum adipisci impedit voluptate tenetur dolore ullam ab pariatur sequi! Recusandae necessitatibus dignissimos cum voluptates ex repellendus vero laboriosam ab. Nobis quam molestiae qui vero consequuntur!</p>
+            </div>
+            <div class="box" id="box-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, magni? Ex praesentium odit placeat error fuga quaerat! Ratione accusamus ex accusantium ducimus qui veritatis laboriosam fugit itaque aperiam doloremque nobis, deleniti voluptates a ipsum cupiditate hic vitae magnam dolorum modi sequi vel nihil. Repudiandae debitis voluptatem consequatur porro minima provident?</p>
+            </div>
+        </div>
+</body>
+</html>

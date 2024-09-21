@@ -1,0 +1,73 @@
+body{
+    background: linear-gradient(to right, rgba(31, 197, 209, 0.614) , rgba(213, 213, 142, 0.684));
+}
+.student{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(128, 23, 219);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.im{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    border-radius: 100%;
+    border: 5px solid black;
+}
+.studentid{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin-top: 0;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+
+}
+.right{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+table, tr, td{
+    border: 1px solid rgba(226, 226, 226, 0.847) ;
+    border-collapse: collapse;
+    margin-left: 20px;
+    height: 25px;
+}
+.gen-info{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 650px;
+    height: 260px;
+    margin: 20px;
+    background-color: white;
+    display: flex; flex-direction: column;
+    justify-content: center ;
+    float: right;
+}
+.other-info{
+    border: 2px solid white;
+    border-radius: 10px;
+    width:650px ;
+    height: 150px;
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+padding: 20px;}
